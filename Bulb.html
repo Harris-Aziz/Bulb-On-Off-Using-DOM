@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title> Bulb </title>
+<style>
+</style>
+</head>
+<body > 
+<img id="bulb" src="https://thumbs.dreamstime.com/b/vector-light-bulb-white-file-eps-format-34983265.jpg" alt="bulb-on" height="300px"  width="300px">
+<button id="btn" >Off</button>
+
+<script>
+let t=true;
+let bulb_var=document.querySelector("#bulb");
+let body=document.getElementsByTagName("body");
+let btn=document.querySelector("#btn");
+btn.addEventListener("click",Select);
+
+function Select(e){
+ if(t==true)
+ { bulb_var.src="https://www.longisland.com/site_media/images/article/subarticle_image/light-bulb-off-1418476-m.jpg.644x0_q85.jpg";
+ t=false;
+ btn.innerHTML="ON";
+ 
+ }
+ else{
+     bulb_var.src="https://thumbs.dreamstime.com/b/vector-light-bulb-white-file-eps-format-34983265.jpg";
+     t=true;
+    btn.innerHTML="Off";
+ }
+}
+
+</script> 
+</body>
+</html>
